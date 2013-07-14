@@ -42,7 +42,7 @@ contains an incomplete list of these features.
 
 <p>
 Since systemd is written in C, the canonical way to write portable code is by
-using lots of <a
+using conditional compilation, for example with <a
 href="http://en.wikipedia.org/wiki/C_preprocessor#Conditional_compilation">ifdef
 statements</a>. That makes the code harder to understand and reason about, but
 more importantly it blows up the <a
