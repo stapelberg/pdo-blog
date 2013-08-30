@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2013/08/30 21:15:00 +0200
+date: 2013/08/30 21:30:00 +0200
 title: "How git performs when you throw all of Debian at it"
 ---
 <p>
@@ -56,5 +56,6 @@ The conclusion is that git is clearly not suitable for this kind of usage,
 which is not surprising after having heard a couple of times that git does not
 scale :-). For the curious, the <code>.git/objects</code> directory is 29 GiB
 for roughly 140 GiB of source code, so the delta encoding is quite impressive
-in terms of saving space.
+in terms of saving space. However, keep in mind that the compressed (!) Debian
+source archive is about 35 GiB, so the savings are not that huge.
 </p>
