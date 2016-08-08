@@ -17,7 +17,7 @@ Part of that slowness was due to historical reasons: the client-side architectur
 </p>
 
 <p>
-After this bit of original investigation, I opened <a href="https://github.com/Debian/dcs/issues/69">GitHub issue #69</a> to track the work on making Debian Code Search faster. In that issue, I captured how Chrome’s network inspector visualizes the work necessary to render the page: <img src="screenshots/2016-08-08-dcs-before.png" width="626" height="278" alt="Chrome network inspector: before">
+After this bit of original investigation, I opened <a href="https://github.com/Debian/dcs/issues/69">GitHub issue #69</a> to track the work on making Debian Code Search faster. In that issue, I captured how Chrome’s network inspector visualizes the work necessary to render the page: <img src="https://people.debian.org/~stapelberg/screenshots/2016-08-08-dcs-before.png" width="626" height="278" alt="Chrome network inspector: before">
 </p>
 
 <h3>A couple of quick wins</h3>
@@ -71,5 +71,5 @@ The biggest win for improving client-side latency from the Chrome address bar wa
 
 <p>
 With all of these improvements in place, rendering latency goes down from half a second to well under 100 ms, and this is what the Chrome network inspector looks like:
-<img src="screenshots/2016-08-08-dcs-after.png" width="471" height="333" alt="Chrome network inspector: after">
+<img src="https://people.debian.org/~stapelberg/screenshots/2016-08-08-dcs-after.png" width="471" height="333" alt="Chrome network inspector: after">
 </p>
