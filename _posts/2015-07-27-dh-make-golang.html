@@ -50,11 +50,12 @@ library <a href="https://github.com/jacobsa/ratelimit">github.com/jacobsa/rateli
 2015/07/25 18:25:55     git add debian && git commit -a -m 'Initial packaging'
 2015/07/25 18:25:55     gbp buildpackage --git-pbuilder
 2015/07/25 18:25:55 
-2015/07/25 18:25:55 To create the packaging git repository on alioth, use:
-2015/07/25 18:25:55     ssh git.debian.org "/git/pkg-go/setup-repository golang-github-jacobsa-ratelimit 'Packaging for golang-github-jacobsa-ratelimit'"
+2015/07/25 18:25:55 To create the packaging git repository on salsa, use:
+2015/07/25 18:25:55     dh-make-golang create-salsa-project golang-github-jacobsa-ratelimit
 2015/07/25 18:25:55 
 2015/07/25 18:25:55 Once you are happy with your packaging, push it to alioth using:
-2015/07/25 18:25:55     git push git+ssh://git.debian.org/git/pkg-go/packages/golang-github-jacobsa-ratelimit.git --tags master pristine-tar upstream
+2015/07/25 18:25:55     git remote set-url origin git@salsa.debian.org:go-team/packages/golang-github-jacobsa-ratelimit.git
+2015/07/25 18:25:55     gbp push
 </pre>
 
 <p>
